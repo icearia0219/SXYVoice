@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aizs.mapper.FeedbackMapper">
+
+    <!-- 定义 ResultMap -->
+    <resultMap id="feedbackResultMap" type="com.aizs.entity.Feedback">
+        <!-- 映射主键 -->
+        <id column="feedbackid" property="feedbackid"/>
+
+        <!-- 映射普通字段 -->
+        <result column="userid" property="userid"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/> <!-- 明确指定 content 为字符串类型 -->
+        <result column="created_at" property="created_at" jdbcType="TIMESTAMP"/> <!-- 指定 created_at 为时间戳类型 -->
+    </resultMap>
+
+    <!-- 查询所有反馈信息 -->
+    <select id="findAll" resultMap="feedbackResultMap">
+        SELECT feedbackid, userid, content, created_at
+        FROM feedbacks
+    </select>
+
+    <!-- 根据用户ID查找反馈 -->
+    <select id="findByUserid" parameterType="Long" resultMap="feedbackResultMap">
+        SELECT feedbackid, userid, content, created_at
+        FROM feedbacks
+        WHERE userid = #{userid}
+    </select>
+
+    <!-- 插入新反馈 -->
+    <insert id="insert" parameterType="com.aizs.entity.Feedback">
+        INSERT INTO feedbacks (userid, content, created_at)
+        VALUES (#{userid}, #{content}, NOW())
+    </insert>
+
+    <!-- 删除单个反馈 -->
+    <delete id="deleteById" parameterType="Long">
+        DELETE FROM feedbacks WHERE feedbackid = #{feedbackid}
+    </delete>
+
+    <!-- 批量删除反馈 -->
+    <delete id="deleteByIds">
+        DELETE FROM feedbacks WHERE feedbackid IN
+        <foreach item="item" index="index" collection="feedbackids" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+</mapper>

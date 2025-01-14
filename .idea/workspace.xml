@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20ecb6a1-2a83-4a24-9cfa-3fa39af813dc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\maven、axis和jdk\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2jLzaIcJyYI5USUBDjidAzHBBZ6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.ai-manager [org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean].executor": "Run",
+    "Python.tts.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AppMain.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/0A电子垃圾2.0/xb/voice/VoiceEdCloud",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.JdbcTest.executor": "Run"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AI\人工智能\ai-manager\src\main\resources\mapper" />
+      <recent name="D:\AI\人工智能\ai-manager\src\main\java\com\aizs\service\impl" />
+      <recent name="D:\AI\人工智能\ai-manager\src\main\java\com\aizs\service" />
+      <recent name="D:\AI\人工智能\ai-manager\src\main\java\com\aizs\mapper" />
+      <recent name="D:\AI\人工智能\ai-manager\src\main\java\com\aizs\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.aizs.service.impl" />
+      <recent name="com.aizs.service" />
+      <recent name="com.aizs.dto" />
+      <recent name="com.aizs.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="ai-manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aizs.AppMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20ecb6a1-2a83-4a24-9cfa-3fa39af813dc" name="Default Changelist" comment="" />
+      <created>1721181206155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721181206155</updated>
+      <workItem from="1721181209208" duration="5109000" />
+      <workItem from="1734780478271" duration="1973000" />
+      <workItem from="1734782465295" duration="2418000" />
+      <workItem from="1734786518097" duration="5358000" />
+      <workItem from="1734793231950" duration="1353000" />
+      <workItem from="1734851158742" duration="21896000" />
+      <workItem from="1734879125721" duration="6633000" />
+      <workItem from="1734935532584" duration="24417000" />
+      <workItem from="1734960955330" duration="3800000" />
+      <workItem from="1735034233673" duration="5000" />
+      <workItem from="1735383874337" duration="1839000" />
+      <workItem from="1735387338134" duration="86000" />
+      <workItem from="1735388404196" duration="3657000" />
+      <workItem from="1735446391335" duration="1993000" />
+      <workItem from="1735448399240" duration="25204000" />
+      <workItem from="1736598789593" duration="620000" />
+      <workItem from="1736650175069" duration="3065000" />
+      <workItem from="1736654790299" duration="72000" />
+      <workItem from="1736655046001" duration="599000" />
+      <workItem from="1736661837960" duration="9988000" />
+      <workItem from="1736755573865" duration="2426000" />
+      <workItem from="1736759012165" duration="1572000" />
+      <workItem from="1736831551957" duration="12255000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
+  </component>
+</project>

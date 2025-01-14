@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aizs.mapper.UserManagementMapper">
+    <!-- Result Map -->
+    <resultMap id="UserResultMap" type="com.aizs.entity.User">
+        <id property="userid" column="userid"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="role" column="role"/>
+        <result property="gender" column="gender"/>
+        <result property="age" column="age"/>
+        <result property="province" column="province"/>
+        <result property="city" column="city"/>
+        <result property="bloodtype" column="bloodtype"/>
+    </resultMap>
+    <!-- 获取所有预测记录 -->
+    <select id="selectUsers" resultMap="UserResultMap">
+        SELECT * FROM users
+                          LIMIT #{pageSize} OFFSET #{startIndex}
+    </select>
+    <!-- 统计所有记录的总条数 -->
+    <select id="selectUsersCount" resultType="int">
+        SELECT COUNT(*) FROM users
+    </select>
+
+    <select id="selectUsersByUsername" resultMap="UserResultMap">
+        SELECT * FROM users WHERE username = #{username}
+            LIMIT #{pageSize} OFFSET #{startIndex}
+    </select>
+
+    <select id="selectUsersCountByUsername" resultType="int">
+        SELECT COUNT(*) FROM users WHERE username = #{username}
+    </select>
+<!--单条删除-->
+    <delete id="deleteUserById">
+        DELETE FROM users WHERE userid = #{userId}
+    </delete>
+    <!--批量删除-->
+    <delete id="deleteBatchIds" parameterType="java.util.List">
+        DELETE FROM users
+        WHERE userid IN
+        <foreach item="item" index="index" collection="ids" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+    <update id="updateUser">
+        UPDATE users
+        SET
+            username = #{username},
+            role = #{role},
+            gender = #{gender},
+            age = #{age},
+            province = #{province},
+            city = #{city},
+            bloodtype = #{bloodtype}
+        WHERE userid = #{userid}
+    </update>
+</mapper>
