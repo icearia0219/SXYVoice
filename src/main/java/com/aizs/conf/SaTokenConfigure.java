@@ -19,6 +19,7 @@ public class SaTokenConfigure implements WebMvcConfigurer {
                         "/api/exam/records/{workerid}",
                         "/api/exam/records/{workerid}/export",
                         "/api/tts",
-                        "/api/tts/synthesize");
+                        "/api/tts/synthesize",
+                        "/api/tts/**");
     }
 }

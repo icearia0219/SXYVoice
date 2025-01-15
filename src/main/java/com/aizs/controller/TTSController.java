@@ -26,14 +26,13 @@ public class TTSController {
     private TTSService ttsService;
 
     @PostMapping("/synthesize")
-    public ResponseEntity<InputStreamResource> synthesizeSpeech(@RequestBody TextToSpeechRequest request) {
+    public ResponseEntity<Object> synthesizeSpeech(@RequestBody TextToSpeechRequest request) {
         logger.info("Received request: Text = {}, Voice = {}, Speed = {}, Pitch = {}",
                 request.getText(), request.getVoice(), request.getSpeed(), request.getPitch());
 
         // 调用服务层的方法生成音频文件并获取文件路径
         String result = ttsService.synthesizeSpeech(request);
 
-        // 如果合成成功，返回音频文件流
         if ("Synthesis started successfully.".equals(result)) {
             try {
                 File audioFile = new File("D:/tts/demo.wav"); // 你生成的音频文件路径
@@ -42,18 +41,18 @@ public class TTSController {
                 // 返回音频文件的流作为响应
                 HttpHeaders headers = new HttpHeaders();
                 headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=demo.wav");
-                headers.add(HttpHeaders.CONTENT_TYPE, "audio/wav"); // 使用字符串代替常量
+                headers.add(HttpHeaders.CONTENT_TYPE, "audio/wav");
 
                 return ResponseEntity.ok()
                         .headers(headers)
                         .body(new InputStreamResource(fileInputStream));
-
             } catch (IOException e) {
                 logger.error("Error reading the audio file: {}", e.getMessage(), e);
                 return ResponseEntity.status(500).body(null); // 返回服务器错误
             }
         } else {
-            return ResponseEntity.status(500).body(null); // 返回服务器错误
+            return ResponseEntity.ok().body("{}");  // 返回空的JSON响应
         }
     }
+
 }
